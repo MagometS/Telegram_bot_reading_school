@@ -1,5 +1,7 @@
 from django.contrib import admin
 from lessons.models import Lesson
+
+
 class LessonAdmin(admin.ModelAdmin):
     list_display = [
         'id', 
@@ -7,4 +9,4 @@ class LessonAdmin(admin.ModelAdmin):
         'link'
     ]
 
-admin.register(Lesson, LessonAdmin)
+admin.site.register(Lesson, LessonAdmin)
